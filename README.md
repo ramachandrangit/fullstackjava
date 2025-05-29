@@ -1,4 +1,4 @@
-# fullstackjava
+# JAVA Full Stack Projects
 # 📝 List Todos App
 
 A full-stack Todo application using **Spring Boot (Backend)** and **React (Frontend)**, demonstrating full **CRUD (Create, Read, Update, Delete)** functionality.
@@ -7,8 +7,8 @@ A full-stack Todo application using **Spring Boot (Backend)** and **React (Front
 
 ## 🔗 GitHub Repositories
 
-- ⚙️ **Backend (Spring Boot)**: [List Todos Backend](https://github.com/your-username/list-todos-backend)
-- 🎨 **Frontend (React)**: [List Todos Frontend](https://github.com/your-username/list-todos-frontend)
+- ⚙️ **Backend (Spring Boot)**: [List Todos Backend](https://github.com/ramachandraaa/TodoFullStack)
+- 🎨 **Frontend (React)**: [List Todos Frontend](https://github.com/ramachandraaa/front-Dev)
 
 ---
 
@@ -56,8 +56,8 @@ A full-stack Todo application using **Spring Boot (Backend)** and **React (Front
 
 1. Clone the backend repo:
     ```bash
-    git clone https://github.com/your-username/list-todos-backend.git
-    cd list-todos-backend
+    git clone https://github.com/ramachandraaa/TodoFullStack
+    cd TodoFullStack
     ```
 
 2. Configure your database in `src/main/resources/application.properties`.
@@ -76,7 +76,7 @@ A full-stack Todo application using **Spring Boot (Backend)** and **React (Front
 
 1. Clone the frontend repo:
     ```bash
-    git clone https://github.com/your-username/list-todos-frontend.git
+    git clone https://github.com/ramachandraaa/front-Dev
     cd list-todos-frontend
     ```
 
@@ -100,7 +100,7 @@ A full-stack Todo application using **Spring Boot (Backend)** and **React (Front
 
 This project demonstrates the implementation of **Spring Security** with enhanced security using **BCryptPasswordEncoder** for password hashing and **JWT (JSON Web Token)** for stateless authentication and authorization.
 
-GitHub Repository: [https://github.com/your-username/spring-security-jwt](https://github.com/your-username/spring-security-jwt)
+GitHub Repository: [[BackendRepoJwt](https://github.com/ramachandraaa/SpringJwt)]
 
 ## 🔐 Features
 
@@ -127,44 +127,43 @@ GitHub Repository: [https://github.com/your-username/spring-security-jwt](https:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/spring-security-jwt.git
-   cd spring-security-jwt
+   git clone https:https://github.com/ramachandraaa/SpringJwt
+   cd SpringJwt
    ```
 
-2. **Configure `application.properties`**
+2. ## Configuration
 
-   ```properties
-   server.port=8080
+Below is the `application.properties` configuration required for the project:
 
-   # JWT configuration
-   jwt.secret=your_jwt_secret_key
-   jwt.expiration=3600000  # 1 hour in milliseconds
+```properties
+# Server Configuration
+server.port=8080
 
-   # Optional: Database configuration
-   spring.datasource.url=jdbc:h2:mem:testdb
-   spring.datasource.driverClassName=org.h2.Driver
-   spring.datasource.username=sa
-   spring.datasource.password=
-   spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
-   ```
+# JWT Configuration
+jwt.secret=your_jwt_secret_key
+jwt.expiration=3600000  # 1 hour in milliseconds
 
-3. **Run the Application**
+# Database Configuration
+spring.jpa.defer-datasource-initialization=true
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://localhost:3306/todos
+spring.datasource.username=todos-user
+spring.datasource.password=dummytodos
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
-   ```bash
-   ./mvnw spring-boot:run
    ```
 
 ## 🔑 Authentication Flow
 
-1. **User Registration** (POST `/api/register`)
+1. **User Registration** (POST `/register`)
 
    * Password is encoded using `BCryptPasswordEncoder`.
 
-2. **Login** (POST `/api/login`)
+2. **Login** (POST `/login`)
 
    * On success, returns a JWT in the response.
 
-3. **Secure API Call** (GET `/api/secure-data`)
+3. **Secure API Call** (GET `/students`) an Example call 
 
    * JWT must be passed in the `Authorization` header as:
 
@@ -188,7 +187,7 @@ GitHub Repository: [https://github.com/your-username/spring-security-jwt](https:
 ### Register
 
 ```json
-POST /api/register
+POST /register
 {
   "username": "john",
   "password": "password123"
@@ -198,7 +197,7 @@ POST /api/register
 ### Login
 
 ```json
-POST /api/login
+POST /login
 {
   "username": "Sujal",
   "password": "S@2005"
@@ -216,7 +215,7 @@ POST /api/login
 ### Secure Access
 
 ```
-GET /api/secure-data
+GET /students
 Authorization: Bearer <your_token>
 ```
 
@@ -229,7 +228,7 @@ Authorization: Bearer <your_token>
 
 ![Login Component](login-token.png)
 
-### BCript encoder 
+### BCrypt encoder 
 
 ![Database (MySql)](database-users.png)
 
