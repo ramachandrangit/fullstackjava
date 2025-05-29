@@ -221,18 +221,35 @@ Authorization: Bearer <your_token>
 ```
 
 ## 📸 Screenshots
+### Register 
+
+![Register Component](login.png)
 
 ### Login 
 
-![Login Screenshot](screenshots/login.png)
+![Login Component](login-token.png)
+
+### BCript encoder 
+
+![Database (MySql)](database-users.png)
+
+### Login With Postman 
+![Login post](login-with-token.png)
+
+### Register With Postman 
+![Register Postman](register-postman.png)
 
 ### JWT Token Generated
 
-![Token Screenshot](screenshots/token.png)
+![Token generation](generating-token.png)
 
 ### Access Secure Endpoint with Token
 
-![Secure Access Screenshot](screenshots/secure-access.png)
+![Secure Token Validation](login-with-token.png)
+
+### JWT Invalid/ExpiredToken
+
+![Invalid Token](invalid-token.png)
 
 ## ✅ Security Highlights
 
