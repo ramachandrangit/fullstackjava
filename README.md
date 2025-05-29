@@ -17,7 +17,7 @@ A full-stack Todo application using **Spring Boot (Backend)** and **React (Front
 > Images of each CRUD operation from the frontend.
 
 ### ➕ Create Todo
-![Create Todo](.Delete-Todo.png)
+![Create Todo](Delete-Todo.png)
 
 ### 📋 Read Todos
 ![Read Todos](./images/read-todos.png)
