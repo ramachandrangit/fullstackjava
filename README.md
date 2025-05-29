@@ -23,13 +23,13 @@ A full-stack Todo application using **Spring Boot (Backend)** and **React (Front
 ![Read Todos](List-Todo.png)
 
 ### ✏️ Update Todo
-![Update Todo](./images/update-todo.png)
+![Update Todo](Update-todo.png)
 
 ### ❌ Delete Todo
-![Delete Todo](./images/Delete-Todo.png)
+![Delete Todo](Delete-Todo.png)
 
-### 📋 After Delete
-![Delete Todo](./images/after-add.png)
+### 📋 After Adding New Todo
+![Delete Todo](after-add.png)
 
 ---
 
@@ -200,8 +200,8 @@ POST /api/register
 ```json
 POST /api/login
 {
-  "username": "Shreya",
-  "password": "Shreya@2005"
+  "username": "Sujal",
+  "password": "S@2005"
 }
 ```
 
